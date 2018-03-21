@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ionic Blanc</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor = "let user of users">
+      <ion-thumbnail item-start>
+        <img src="{{user.picture}}">
+      </ion-thumbnail>
+      <h2>{{user.superhero}}</h2>
+      <p>{{user.publisher}}</p>
+      <button ion-button clear item-end (click)="sendParam(user)">View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
