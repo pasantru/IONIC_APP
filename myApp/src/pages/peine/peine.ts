@@ -20,7 +20,7 @@ export class PeinePage {
   alterego: string;
   first_apparence: string;
   characters: string;
-  pictures: string;
+  picture: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.superhero = this.navParams.get('superhero');
@@ -28,7 +28,7 @@ export class PeinePage {
     this.alterego = this.navParams.get('alterego');
     this.first_apparence = this.navParams.get('first_apparence');
     this.characters = this.navParams.get('characters');
-    this.pictures = this.navParams.get('pictures');
+    this.picture = this.navParams.get('picture');
   }
 
   ionViewDidLoad() {

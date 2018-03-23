@@ -29,7 +29,7 @@ export class HomePage {
         for (var i = 0; i < res.length; i++) {
           superheroes.push({
             superhero: res[i].superhero,
-            publusher: res[i].publisher,
+            publisher: res[i].publisher,
             alterego: res[i].alter_ego,
             first_apperence: res[i].first_apperence,
             characters: res[i].characters,
